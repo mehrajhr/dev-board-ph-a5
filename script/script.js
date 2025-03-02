@@ -5,36 +5,42 @@ const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric
 setDate.innerHTML = `${now.toLocaleDateString(undefined, options)}`
 // completed button task
 document.getElementById('btn-complete-1').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-1');
     addActivityById('card-title-1');
     dueTask('due-task');
     incrementNumber('increment-number');
 })
 document.getElementById('btn-complete-2').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-2');
     addActivityById('card-title-2');
     dueTask('due-task');
     incrementNumber('increment-number');
 })
 document.getElementById('btn-complete-3').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-3');
     addActivityById('card-title-3');
     dueTask('due-task');
     incrementNumber('increment-number');
 })
 document.getElementById('btn-complete-4').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-4');
     addActivityById('card-title-4');
     dueTask('due-task');
     incrementNumber('increment-number');
 })
 document.getElementById('btn-complete-5').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-5');
     addActivityById('card-title-5');
     dueTask('due-task');
     incrementNumber('increment-number');
 })
 document.getElementById('btn-complete-6').addEventListener('click', function(event){
+    alert("Board Updated Succesfully");
     setAttributeFundtion('btn-complete-6');
     addActivityById('card-title-6');
     dueTask('due-task');
@@ -53,4 +59,10 @@ document.getElementById('bg-color').addEventListener('click', function(event){
     const randomBgColor = Math.floor(Math.random() * bgColors.length);
     document.body.style.backgroundColor = bgColors[randomBgColor];
     console.log("background color");
+})
+
+// discover something new click 
+
+document.getElementById("qa-sasssion").addEventListener('click', function(){
+    window.location.href = "./Q&A.html";
 })
