@@ -24,9 +24,9 @@
             <div class="flex gap-14 justify-center items-center">
                 <div class="flex gap-3">
                     <img src="assets/checkbox.png" alt="">
-                    <h3 class="text-2xl font-semibold">23</h3>
+                    <h3 id="increment-number" class="text-2xl font-semibold">23</h3>
                 </div>
-                <img src="assets/theme-btn.png" alt="">
+                <img id="bg-color" class="cursor-pointer" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
 
@@ -41,7 +41,7 @@
                         <img class="h-4" src="assets/checkbox.png" alt="">
                         <div class="flex flex-col pb-4 pt-4">
                             <p class="text-gray-700 text-sm">Task Assigned </p>
-                            <h3 class="font-bold text-2xl">0<span>6</span></h3>
+                            <h3 class="font-bold text-2xl">0<span id="due-task">6</span></h3>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
                             <img class="h-5 " src="assets/calender.png" alt="">
                         </div>
                         <div>
-                            <h3>Wed ,<br> Jul 28 2025 </h3>
+                            <h3 class="font-semibold text-lg" id="set-date"> </h3>
                         </div>
                     </div>
                 </div>
@@ -69,9 +69,10 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-min border-none bg-white">ShopEase</button>
-                            <h2 class="card-title">Fix Mobile Button Issue </h2>
+                            <h2 id="card-title-1" class="card-title">Fix Mobile Button Issue </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for
+                                    overlapping elements, and ensure onClick works
                                     properly
                                     and ensure onClick works properly</p>
                             </div>
@@ -81,7 +82,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-1" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -91,9 +92,11 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-min border-none bg-white">CloudSync</button>
-                            <h2 class="card-title">Add Dark Mode </h2>
+                            <h2 id="card-title-2" class="card-title">Add Dark Mode </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                                <p class="text-ellipsis text-sm text-gray-400">Store the user's preference in
+                                    localStorage, update CSS variables dynamically, and apply a smooth transition
+                                    effect.</p>
                             </div>
                             <div class="flex items-center">
                                 <div class="flex-1">
@@ -101,7 +104,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-2" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -111,9 +114,10 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-min border-none bg-white">ShopEase</button>
-                            <h2 class="card-title">Optimize  Home page </h2>
+                            <h2 id="card-title-3" class="card-title">Optimize Home page </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for
+                                    overlapping elements, and ensure onClick works properly
                                     and ensure onClick works properly</p>
                             </div>
                             <div class="flex items-center">
@@ -122,7 +126,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-3" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -132,9 +136,10 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-min border-none bg-white">Meta</button>
-                            <h2 class="card-title">Add new emoji 🤲 </h2>
+                            <h2 id="card-title-4" class="card-title">Add new emoji 🤲 </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for
+                                    overlapping elements, and ensure onClick works properly
                                     and ensure onClick works properly</p>
                             </div>
                             <div class="flex items-center">
@@ -143,7 +148,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-4" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -153,9 +158,10 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-max border-none bg-white">Google LLC</button>
-                            <h2 class="card-title">Integrate OpenAI API  </h2>
+                            <h2 id="card-title-5" class="card-title">Integrate OpenAI API </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for
+                                    overlapping elements, and ensure onClick works properly
                                     and ensure onClick works properly</p>
                             </div>
                             <div class="flex items-center">
@@ -164,7 +170,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-5" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -174,9 +180,10 @@
                     <div class="card bg-slate-100  shadow-sm w-auto">
                         <div class="card-body">
                             <button class="btn btn-sm w-min border-none bg-white">Glassdoar</button>
-                            <h2 class="card-title">Improve Job searching  </h2>
+                            <h2 id="card-title-6" class="card-title">Improve Job searching </h2>
                             <div class="p-4 bg-white h-16 overflow-hidden">
-                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                <p class="text-ellipsis text-sm text-gray-400">Debug using Chrome DevTools, check for
+                                    overlapping elements, and ensure onClick works properly
                                     and ensure onClick works properly</p>
                             </div>
                             <div class="flex items-center">
@@ -185,7 +192,7 @@
                                     <p class="font-semibold text-sm">21 March 2025</p>
                                 </div>
                                 <div class="card-actions ">
-                                    <button class="btn btn-sm bg-blue-500 text-white">Completed</button>
+                                    <button id="btn-complete-6" class="btn btn-sm bg-blue-500 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -200,13 +207,16 @@
                         <img class="h-4" src="assets/activity.png" alt="">
                         <p class="font-bold">Activity Log</p>
                     </div>
-                    <button class="btn btn-sm border-none bg-blue-500 text-white">Clear History</button>
+                    <button id="clear-history" class="btn btn-sm border-none bg-blue-500 text-white">Clear History</button>
                 </div>
-                <div>
+                <div id="activity-add" class="flex flex-col gap-3">
                 </div>
             </secttion>
         </main>
     </section>
+
+    <script src="script/script.js"></script>
+    <script src="script/reuse.js"></script>
 </body>
 
 </html>
