@@ -2,7 +2,12 @@
 const setDate = document.getElementById('set-date');
 const now = new Date();
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-setDate.innerHTML = `${now.toLocaleDateString(undefined, options)}`
+setDate.innerHTML = `${now.toLocaleDateString(undefined, options)}`;
+let count = 0;
+console.log(count);
+if(count === 6){
+    alert("congrats!!! You have completed all the cuurrent task");
+}
 // completed button task
 document.getElementById('btn-complete-1').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -10,6 +15,8 @@ document.getElementById('btn-complete-1').addEventListener('click', function(eve
     addActivityById('card-title-1');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
 })
 document.getElementById('btn-complete-2').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -17,6 +24,9 @@ document.getElementById('btn-complete-2').addEventListener('click', function(eve
     addActivityById('card-title-2');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
+
 })
 document.getElementById('btn-complete-3').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -24,6 +34,8 @@ document.getElementById('btn-complete-3').addEventListener('click', function(eve
     addActivityById('card-title-3');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
 })
 document.getElementById('btn-complete-4').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -31,6 +43,8 @@ document.getElementById('btn-complete-4').addEventListener('click', function(eve
     addActivityById('card-title-4');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
 })
 document.getElementById('btn-complete-5').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -38,6 +52,8 @@ document.getElementById('btn-complete-5').addEventListener('click', function(eve
     addActivityById('card-title-5');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
 })
 document.getElementById('btn-complete-6').addEventListener('click', function(event){
     alert("Board Updated Succesfully");
@@ -45,6 +61,8 @@ document.getElementById('btn-complete-6').addEventListener('click', function(eve
     addActivityById('card-title-6');
     dueTask('due-task');
     incrementNumber('increment-number');
+    count++;
+    taskComplete(count);
 })
 
 // clear history button task

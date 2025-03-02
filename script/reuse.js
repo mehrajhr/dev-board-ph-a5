@@ -29,3 +29,10 @@ function incrementNumber(id){
     number = Number(number) + 1;
     setInnertextById(id , number);
 }
+
+function taskComplete(count){
+    if(count === 6){
+        alert("congrats!!! You have completed all the current task")
+    }
+
+}
